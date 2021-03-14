@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+body{
+   min-height: 100vh;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.quot{
+    padding: 20px;
+}
+
+.wrapper{
+    /* background-color: pink; */
+    width: 90%;
+    position: relative;
+
+
+}
+
+.textarea{
+    resize: none;
+    width: 90%;
+    height: 10vh;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.timer{
+    width: 10%;
+    height: 10vh;
+    /* background-color: red; */
+    position: absolute;
+    /* bottom: -500px; */
+    right:0%;
+    top: 12.5vh;
+    
+    padding: 10px;
+    color: red;
+}
+
+.start{
+font-weight: bold;
+padding: 10px;
+position: absolute;
+left:0%;
+top: 50%;
+}
+
+
+.bolderQuote{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.correct{
+    color:green;
+}
+
+.wrong{
+    color:red;
+    text-decoration: underline;
+}
+
+.span{
+    color: blcak;
+}
+
+.result{
+    width: 40%;
+    height: 40vh;
+    background-color: rgb(255, 225, 128);
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    animation: popup 1s;
+    display: none;
+    padding: 10px;
+}
+
+
+h3{
+    color: rgb(207, 67, 67);
+}
+
+.info{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90%;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.speed{
+    text-align: center;
+    border-bottom:1px solid white ;
+    color:rgb(0, 255, 13)
+}
+
+
+
+
+
+
+
+@keyframes popup{
+0%{transform: scale(0) translateY(-100%)}
+90%{
+    transform: scale(1.09) translateY(10%);
+}
+100%{
+    transform: scale(1) translateY(0%);
+}
+}

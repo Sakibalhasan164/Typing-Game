@@ -1,0 +1,1 @@
+GET http://localhost:5000/quots/random/quantity?5 HTTP/1.1
